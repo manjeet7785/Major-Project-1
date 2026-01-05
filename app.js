@@ -20,9 +20,7 @@ const LocalStrategy = require("passport-local");
 const User = require("./models/user.js")
 
 const url = process.env.DB_URL;
-app.get("/", (req, res) => {
-  res.send("listingRouter");
-})
+
 
 async function main() {
   try {
