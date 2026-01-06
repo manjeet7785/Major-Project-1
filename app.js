@@ -80,6 +80,11 @@ app.use((req, res, next) => {
   next();
 })
 
+// Redirect root to listings to avoid falling into the 404 handler when visiting '/'.
+app.get("/", (req, res) => {
+  res.redirect("/listings");
+});
+
 app.use("/", userRouter)
 app.use("/listings", listingRouter);
 app.use("/listings/:id/reviews", reviewsRoute);
@@ -97,7 +102,7 @@ app.use((req, res, next) => {
 
 app.use((err, req, res, next) => {
   let { statusCode = 500, message = "Something Went Wrong!" } = err;
-  res.render("error.ejs", { err })
+  res.status(statusCode).render("error.ejs", { err })
 })
 
 main();
