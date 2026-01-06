@@ -245,3 +245,134 @@ i:hover {
     background-color: white;
   }
 }
+
+/* ================= Footer ================= */
+.site-footer {
+  background-color: #1f252b;
+  color: #dfe6ef;
+  padding: 3.5rem 0 2.5rem;
+  margin-top: 3rem;
+}
+
+.footer-title {
+  color: #ffffff;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.footer-links a {
+  color: #c7d1dd;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+  color: #79a8ff;
+}
+
+.footer-subtitle {
+  color: #b7c3d4;
+  margin: 0 0 0.75rem 0;
+}
+
+.newsletter-input {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.newsletter-input input {
+  flex: 1 1 220px;
+  padding: 0.65rem 0.85rem;
+  border: 1px solid #39424d;
+  border-radius: 0.5rem;
+  background: #151a1f;
+  color: #dfe6ef;
+}
+
+.newsletter-input input:focus {
+  outline: 2px solid #79a8ff;
+  border-color: #79a8ff;
+}
+
+.newsletter-input button {
+  padding: 0.65rem 1.05rem;
+  border: none;
+  border-radius: 0.5rem;
+  background: #0d6efd;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.newsletter-input button:hover {
+  background: #0b5ed7;
+}
+
+.newsletter-input button:active {
+  transform: translateY(1px);
+}
+
+.footer-bottom {
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #2d343c;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.footer-bottom p {
+  color: #9aa8b8;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.footer-socials a {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #161c22;
+  display: grid;
+  place-items: center;
+  color: #dfe6ef;
+  border: 1px solid #2d343c;
+  transition: background-color 0.2s ease, color 0.2s ease, transform 0.1s ease;
+}
+
+.footer-socials a:hover {
+  background: #0d6efd;
+  color: #ffffff;
+  transform: translateY(-1px);
+}
+
+@media (max-width: 768px) {
+  .newsletter-input {
+    flex-direction: column;
+  }
+
+  .newsletter-input input,
+  .newsletter-input button {
+    width: 100%;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
