@@ -1,6 +1,6 @@
 <nav class="navbar navbar-light bg-light navbar-expand-md border-bottom sticky-top">
   <div class="container-fluid">
-    <a class="navbar-brand fw-semibold" href="/listings">Home</a>
+    <a class="navbar-brand fw-semibold" href="/listings">MKM Properties</a>
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,12 +24,12 @@
           <li class="nav-item">
             <a href="/login" class="nav-link nav-action-link">Log in</a>
           </li>
-        <% } %>
-        <% if(currUser) { %>
-          <li class="nav-item">
-            <a href="/logout" class="nav-link nav-action-link">Log Out</a>
-          </li>
-        <% } %>
+          <% } %>
+            <% if(currUser) { %>
+              <li class="nav-item">
+                <a href="/logout" class="nav-link nav-action-link">Log Out</a>
+              </li>
+              <% } %>
       </ul>
     </div>
   </div>
